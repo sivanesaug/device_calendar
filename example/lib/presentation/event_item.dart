@@ -2,7 +2,6 @@ import 'dart:io';
 
 import 'package:device_calendar/device_calendar.dart';
 import 'package:flutter/material.dart';
-import 'package:flutter_native_timezone/flutter_native_timezone.dart';
 import 'package:intl/intl.dart';
 
 import 'recurring_event_dialog.dart';
@@ -313,7 +312,7 @@ class _EventItemState extends State<EventItem> {
   void setCurentLocation() async {
     String? timezone;
     try {
-      timezone = await FlutterNativeTimezone.getLocalTimezone();
+      //timezone = await FlutterNativeTimezone.getLocalTimezone();
     } catch (e) {
       print('Could not get the local timezone');
     }
